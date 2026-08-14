@@ -1,0 +1,6 @@
+{
+  "name": "AppFixGuide",
+  "description": "Find the Android Error. Fix It Fast. Android, APK, AAB, WebView, and Gradle troubleshooting platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
