@@ -3,6 +3,7 @@ import { useLanguage } from '../components/LanguageContext';
 import { useAppTheme } from '../components/ThemeContext';
 import { errorsDatabase, categories } from '../data/errors';
 import { AndroidError } from '../types';
+import BannerAd from '../components/BannerAd';
 
 interface HomeViewProps {
   onSelectError: (error: AndroidError) => void;
@@ -238,6 +239,9 @@ export default function HomeView({ onSelectError, onNavigate }: HomeViewProps) {
 
         {/* Right Sidebar */}
         <aside className="lg:col-span-4 space-y-6">
+          
+          {/* Native Banner Ad */}
+          <BannerAd />
           
           {/* Active Diagnostic Stats Panel */}
           <div className="bg-white dark:bg-zinc-900 rounded-2xl p-6 border border-zinc-200 dark:border-zinc-800 shadow-sm space-y-4">

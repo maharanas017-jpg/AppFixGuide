@@ -3,6 +3,7 @@ import { useLanguage } from '../components/LanguageContext';
 import { useAppTheme } from '../components/ThemeContext';
 import { AndroidError } from '../types';
 import { errorsDatabase, categories } from '../data/errors';
+import BannerAd from '../components/BannerAd';
 
 interface ErrorDetailViewProps {
   error: AndroidError;
@@ -161,6 +162,9 @@ export default function ErrorDetailView({ error, onSelectError, onBack }: ErrorD
             {displaySummary}
           </p>
         </div>
+
+        {/* Sponsor Banner Ad Block */}
+        <BannerAd />
 
         {/* Details & Meaning */}
         <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 rounded-2xl space-y-4 shadow-sm">
